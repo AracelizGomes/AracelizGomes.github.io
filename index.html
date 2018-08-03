@@ -1,268 +1,416 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-  <head>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+    <p class="w3-text-grey">Template by W3.CSS</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-    <title>Araceliz Gomes </title>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Java</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Python</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>HTML/CSS</button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="googlecodeu.PNG" alt="Google" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Google CodeU Participant SU’2018 - Team 34 Chat App </b></p>
+        Participated in CodeU, an exclusive Software Dev program for high potential students to strengthen their skills. Created a Chat Application alongside 3 other participants that allowed users to:
+				<li>Connect with others through Interest Conversations</li>
+				<li>Create Private and Group Conversations</li>
+				<li>Customize their Profile Page and monitor their activity</li>
+				<li>Personal contributions to Chat App include the creation of the Group and Private Conversations Feature, the Add and Remove Users from a conversation Feature, and the Profile Pages which consist of an About Me section and a Most Recent Activity Log. In addition, I created the most recent GUI for the Chat Application. Coded in Java, HTML and CSS.</li>
+				<li>Presented Application at Google Student Retreat in Mountainview California.</li>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="celia.PNG" alt="Celia" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>"Celia" AI Chatbot</b></p>
+        <p>CELIA is a simple conversational Chatbot coded with Python. I created her due to my interest in Artificial Intellegence. I hope to improve the functionality and add on new capabilities to CELIA as I learn more.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="HP.jpg" alt="HP" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Harry Potter Game</b></p>
+        <p>Interactive Harry Potter Game that allows users to travel through Hogwarts, shop, get sorted, and interact with different characters. Created with Python. </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="tcp.jpg" alt="tcp" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Server And Client</b></p>
+        <p>Created a server and client in C. Built for Systems Programming Class at the University of Connecticut</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="townhouse.png" alt="th" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Townhousefordogs.com</b></p>
+        <p>Navigation system created and designed for local kennel and grooming business to which I was employed.</p>
+      </div>
+    </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="IMG-0026.JPG" alt="Me" style="width:100%">
+    </div>
+    <div class="w3-col m6">
+      <img src="IMG-0023.JPG" alt="Me" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+		<!-- Page Container -->
+	<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
     
-    <!-- Custom styles for this template -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/0/0b/Pixel_panda_by_jinsuelhance-d8i34ew.png/revision/latest?cb=20160804015311" type="image/gif" sizes="16x16">
-  </head>
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/w3images/avatar_hat.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Jane Doe</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer Science and Engineering Student</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Storrs, CT</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>araceliz.gomes@uconn.edu</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>203-768-3887</p>
+          <hr>
 
-  <body id="page-top">
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Systems Administration Information Technology</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>Digital Marketing</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Web Development</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div>
+          </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Araceliz Gomes</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Spanish</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
+          </div>
+          <p>Creole (Cape Verde Islands)</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:50%"></div>
+          </div>
+          <br>
+			
+			    <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Programming Languages</b></p>
+          <p>Python</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:75%"></div>
+          </div>
+          <p>Java</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:65%"></div>
+          </div>
+          <p>C</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:50%"></div>
+          </div>
+          <br>
+					<p>JavaScript</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:45%"></div>
+          </div>
+          <br>
+					<p>HTML/CSS</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:45%"></div>
+          </div>
+          <br>
+					<p>MATLAB</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:40%"></div>
+          </div>
+          <br>
+					<p>Scheme</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:40%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+		
+			<!-- Education-->
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University of Connecticut</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2016 - Present</h6>
+					<h6 class="w3-text-teal"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>Graduation: May 2020; Junior </h6>
+          <p>B.S. Computer Science and Engineering</p>
+      </div>
+			
+			<!-- RELEVANT COURSES-->
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Relevant Courses</h2>
+        <div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2016 - Present</h6>
+          <p>
+					<li>Intro to Computing for Engineers in Python</li>
+					<li>Intro to Principal Programming in Scheme</li>
+					<li>Data Structures and Object-Oriented Design in Python</li>
+					<li>Introduction to Discrete Systems</li>
+					<li>Digital Logic Design</li>
+					<li>Systems Programming in C</li>
+					</p>
+          <hr>
         </div>
       </div>
-    </nav>
+			
+			<!-- Experience-->
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> University of Connecticut Student Affairs Information Technology</b></h5>
+					<h4>Systems Administration Student Employee</h4>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018 - <span class="w3-tag w3-teal w3-round">Feb 2018 - Current</span></h6>
+          <p>Manages several projects throughout semester, including computer imaging, Software installation, AirWatch and iPad configuration for UConn Dining Halls as well as creating scripts for server management.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Daniel Trust Foundation</b></h5>
+					<h4>Director of Marketing and Communications</h4>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - Current</h6>
+          <p>Attends meetings and networking events with the CEO Daniel Trust. Meets with potential donors and works to persuade them to help our cause to fund higher education for inner-city students. </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Connecticut Center for Advanced Technology, Inc. </b></h5>
+					<h4> Technical Support and Data Management for Manufacturing Intern. </h4>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018</h6>
+          <p>Applied MySQL and SQL skills to collect and model CCAT Manufacturing Floor Data of Alloy Processes for the Navy. Database created is viewable through login-based website. Applied MATLAB skills to create program that creates multiple graphs of Sound Data. </p>
+					<br>
+        </div>
+				<div class="w3-container">
+          <h5 class="w3-opacity"><b>Municipal Parking Services</b></h5>
+					<h4> Digital Marketing Intern </h4>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018</h6>
+          <p>Developed marketing platform for the City of Bridgeport, selling ad space to local businesses. Designed Ads. Managed social media platforms. Updated website. </p>
+					<br>
+        </div>
+				<div class="w3-container">
+          <h5 class="w3-opacity"><b>Townhouse for Dogs</b></h5>
+					<h4> Secretary, Social Media and Website Creator & Manager.  </h4>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2015 - June 2016</h6>
+					<br>
+        </div>
+      </div>
+			
+			<!-- Leadership-->
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Society of Professional Hispanic Engineers, Secretary </b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2016 - Current</h6>
+          <p>Sends out weekly email reminders and recaps for meetings. Manages social media platforms. </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>BRIDGE Mentor Mentee Program</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2017-Current</h6>
+          <p> Established relationships with incoming college students to help them succeed in the transition to college. Demonstrated ability to help mentee excel in Engineering discipline. </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Engineering Ambassadors Member and Tour Guide</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - Current</h6>
+          <br>
+        </div>
+      </div>
 
-    <header class="text-white bg-info" >
-      <div class="container text-center">
-        <h1>Araceliz Gomes</h1>
-        <p class="lead">Computer Science and Engineering Student | Future Software Engineer </p>
-        <head>
-<style>
-.button {
-    background-color: #F95F5F; 
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: #FDFEFE; 
-    color: #F66D6D;
+    <!-- End Right Column -->
+			</div>
     
- }
+  <!-- End Grid -->
+		</div>
+  
+  <!-- End Page Container -->
+	</div>
+		<hr>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>araceliz.gomes@uconn.edu</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Storrs CT, US</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>203-768-3887</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>aracelizgomes.com</h3>
+      <p>Hosting off GitHub.</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>MY TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">C</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Python</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Java</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">HTML/CSS</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">JavaScript</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">GoogleStudents</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">IT</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">CodeU</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DigitalMarketing</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Soccer</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+    </div>
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Araceliz Gomes | Future Software Engineer</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
  
-.button1  {border-radius: 8px; }
-.button2  {border-radius: 8px;}
-.button3  {border-radius: 8px;}
-.button4  {border-radius: 8px;}
-.button5  {border-radius: 8px;}
-</style>
-</head>
-<body>
-
-
-<a href="mailto:araceliz.gomes@uconn.edu" style="font-family:Arial" class="button button1">EMAIL</a>
-<button class="button button2" onclick="window.open('https://github.com/AracelizGomes', '_blank')">GITHUB</button>
-<button class="button button3" onclick="window.open('https://www.linkedin.com/in/aracelizgomes/', '_blank')">LINKEDIN</button>
-<button class="button button4" onclick="window.open('Araceliz Gomes Resume 7_2018.pdf', '_blank')">RESUME</button>
-
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
 </body>
-    </header>
-
-   <section id="About Me">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h1 class="text-center" style="padding-bottom:10px">About Me</h1>
-            <hr class="section-heading-spacer">
-            <p ><img src="IMG-0027.JPG" margin="40px" align="left" width="300" height="400"></p>
-            <div class="column">
-            <p class="lead" style="border: 1px; padding: 0px; padding-left:340px">   Hello! My name is Araceliz Gomes and I am a Computer Science and Engineering major going into my Junior year at the University of Connecticut. Some of the things that I enjoy are: </p>
-            </div>
-            <ul style="border:1px; padding: 0px; padding-left: 360px; ">
-              <li>Software Development</li>
-              <li>Machine Learning</li>
-              <li>Blockchain Technology</li>
-              <li>Traveling</li>
-              <li>Photography</li>
-              <i class="fa fa-camera-retro" aria-hidden="true"></i>
-              <li>Makeup</li>
-              <li>Cooking</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="experience" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class"text-center" style="padding-bottom:10px">Experience</h2>
-            <hr class="section-heading-spacer" >
-            <h3 class="section-heading; text-center;">Google CodeU Participant</h3>
-            <div id="container">
-              <img src="googlecodeu.PNG" margin="40px">
-               <ul">
-              <li><a class="lead" id="text"> CodeU is an invitation only Google program that’s halfway between a hackathon and an internship. </a></li>
-              <li><a class="lead" id="text"> Over the course of 12 weeks, participants collaborate virtually with a Googler and a team of your peers to develop a chat web app. </a></li>
-              <li><a class="lead" id="text">I am currently participating for the Summer 2018 Program. </a></li>
-                                          
-             </div>
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="experience">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 style="padding-bottom:10px">Experience</h2>
-            <hr class="section-heading-spacer">
-            <h3 class="section-heading; ">University of Connecticut Student Affairs Information Technology</h3>
-            <div id="container">
-              <img src="uconn SAIT.png" margin="40px" style="padding:10px;" class="center" width="285px" height="300px">
-              <p class="lead" id="text"> At UConn SAIT I work in Systems Administration as a Student Worker. My tasks include managing several projects over course of semester, including computer imaging, Software installation, channel player configurations, writing scripts for server checks for Nagios and NSClient++, and any other projects that may come my way.</p>
-            </div>
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-  <section id="experience" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 style="padding-bottom:10px">Experience</h2>
-            <hr class="section-heading-spacer">
-            <h3 class="section-heading;">Connecticut Center For Advanced Technology</h3>
-            <div id="container">
-              <img src="ccat-logo.gif" margin="40px" style="padding:10px" class="center">
-              <p class="lead" id="text"> At CCAT I managed several projects over the course of the winter break. Identified and assessed manufacturing shop floor monitoring software to be implemented on machines at The CCAT AMC Manufacturing Floor. Developed an Audio Data Acquisition and Download for Manufacturing Operations system by implementing a digital recording software and creating graphing functions with MATLAB. Created a database for Manufacturing Floor Processes using MySQL and SQL on workbench, accessible through the server on workbench and a login-based website</p>
-            </div>
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-     <section id="projects">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 style="padding-bottom:10px">Projects</h2>
-            <hr class="section-heading-spacer">
-            <h3 class="section-heading; ">CELIA Chatbot</h3>
-            <div id="container">
-              <img src="celia.PNG" margin="40px" style="padding:10px;" margin="40px" align="left">
-              <p class="lead" id="text" padding-left:340px padding-above:100px"> CELIA is a simple conversational Chatbot coded with Python. I created her due to my interest in Artificial Intellegence. I hope to improve the functionality and add on new capabilities to CELIA as I learn more.</p>
-            </div>
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="projects" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 style="padding-bottom:10px">Projects</h2>
-            <hr class="section-heading-spacer">
-            <h3 class="section-heading; ">Townhousefordogs.com</h3>
-            <div id="container">
-              <img src="townhouse.png" margin="40px" style="padding:10px;" margin="40px" align="left">
-              <p class="lead" id="text" padding-left:340px padding-above:100px">Townhousefordogs.com is a website that I created for a local Kennel. </p>
-            </div>
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-                                                                               
-    <section id="projects">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 style="padding-bottom:10px">Projects</h2>
-            <hr class="section-heading-spacer">
-            <h3 class="section-heading; ">Redroosterdeli.com</h3>
-            <div id="container">
-              <img src="redrooster.png" margin="40px" style="padding:10px;" margin="40px" align="left">
-              <p class="lead" id="text" padding-left:340px padding-above:100px">RedRoosterdeli.com is a website that I created for my family's restauraunt. </p>
-            </div>
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <section id="contact" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 style="padding-bottom:10px">Contact Me</h2>
-            <hr class="section-heading-spacer">
-                <a href="mailto:araceliz.gomes@uconn.edu" style="font-family:Arial" class="button button1">EMAIL ME</a>     
-              <button class="button button3" onclick="window.open('https://www.linkedin.com/in/aracelizgomes/', '_blank')">LINKEDIN</button>
-            </div>
-        </div>
-      </div>
-    </section>
-        
-        
-        
-        
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">aracelizgomes.com created by Araceliz Gomes</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
-
-  </body>
-
 </html>
